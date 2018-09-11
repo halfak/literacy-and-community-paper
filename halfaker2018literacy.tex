@@ -1,0 +1,110 @@
+\documentclass{sigchi-ext}
+% Please be sure that you have the dependencies (i.e., additional
+% LaTeX packages) to compile this example.
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[scaled=.92]{helvet} % for proper fonts
+\usepackage{graphicx} % for EPS use the graphics package instead
+\usepackage{balance}  % for useful for balancing the last columns
+\usepackage{booktabs} % for pretty table rules
+\usepackage{ccicons}  % for Creative Commons citation icons
+\usepackage{ragged2e} % for tighter hyphenation
+
+% Some optional stuff you might like/need.
+% \usepackage{marginnote}
+% \usepackage[shortlabels]{enumitem}
+% \usepackage{paralist}
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP --
+\copyrightinfo{This article is licensed under the Creative Commons \\
+Attribution 4.0 International license (CC BY 4.0). You are free to share\\
+and adapt this work, provided you attribute the authors and leave this \\ copyright notice intact.
+ {\emph{CSCW'18}}, November 3-7, 2018, Jersey City, NJ, USA. \\
+ https://doi.org/XXXXX/XXXXX}
+
+\input{parts/metadata}
+
+\input{parts/authors}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+}
+
+% \reversemarginpar%
+
+\begin{document}
+
+%% For the camera ready, use the commands provided by the ACM in the Permission Release Form.
+%\CopyrightYear{2007}
+%\setcopyright{rightsretained}
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\isbn{0-12345-67-8/90/01}
+%\doi{http://dx.doi.org/10.1145/2858036.2858119}
+%% Then override the default copyright message with the \acmcopyright command.
+%\copyrightinfo{\acmcopyright}
+
+\maketitle
+
+% Uncomment to disable hyphenation (not recommended)
+% https://twitter.com/anjirokhan/status/546046683331973120
+\RaggedRight{}
+
+% Do not change the page size or page settings.
+\begin{abstract}
+ORES is cool.  People do fun stuff around it.  Thinking
+about transparency in terms of crowd literacy is interesting.
+We see evidence of crowd literacy growing around ORES.
+Crowd literacy allows groups of people to exert power
+over governing algorithms.
+\end{abstract}
+
+\keywords{\plainkeywords}
+
+\category{G.4}{MATHEMATICAL SOFTWARE}{Algorithm design and analysis}
+\category{H.4.2}{Types of Systems}{Decision support (e.g., MIS)}
+\category{H.5.3}{Group and Organization Interfaces}{Collaborative computing}
+
+\section{Introduction}
+I am a paper
+
+\section{Literacy of social algorithms}
+It's hard.
+
+\section{CSCW and group knowledges}
+Communities of practice!  Distributed cognition!  There are ways that groups \emph{think}.\cite{crawford2016algorithm}
+
+\section{ORES: Participatory machine learning probe}
+ORES is a system.  It's pretty transparent.  We deployed it in Wikipedia.  People are doing some very CSCWy things around it and showing deep literacy.
+
+\section{Discussion}
+We should think of ML literacy differently.  Collaborative/participatory processes allow for natural, social processes to support literacy.
+We should build a proper auditing system to support this stuff.
+Power struggles are real.  This isn't the holy grail.  But it surfaces some cool stuff.
+
+\balance{}
+
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{refs}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
